@@ -1,11 +1,16 @@
-![](https://i.imgur.com/xG74tOh.png)
-
-<h3 align="center"> 
+<h1 align="center"> 
 	🚧 API Sistema Bancário 🚧
-</h3>
+</h1>
 
 <p align="center">
   <img alt="Status Em Desenvolvimento" src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green">
+</p>
+
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-endpoints">Endpoints</a> •
+ <a href="#-como-executar">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a>
 </p>
 
 ## 💻 Sobre o projeto
