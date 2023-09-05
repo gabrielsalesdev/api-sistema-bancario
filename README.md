@@ -171,6 +171,10 @@ $ npm run dev
 
 ```
 
+### Requisições
+
+Para testar e interagir com a API, recomendo o uso de ferramentas como o [Insomnia](https://insomnia.rest/) e [Postman](https://www.postman.com/). Disponibilizei um arquivo exportado do Insomnia com as requisições. Basta importá-lo na ferramenta e começar a [testar](insomnia-requests.json).
+
 ## 🛠 Tecnologias
 
 - **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
