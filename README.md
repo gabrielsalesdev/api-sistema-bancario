@@ -145,7 +145,7 @@ Além disso é criado um registro da transferência:
 }
 ```
 
-## 🛣️ Como executar o projeto
+## 🛣️ Como executar
 
 ### Pré-requisitos
 
