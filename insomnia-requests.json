@@ -1,1 +1,327 @@
-{"_type":"export","__export_format":4,"__export_date":"2023-09-05T02:01:19.508Z","__export_source":"insomnia.desktop.app:v2023.5.7","resources":[{"_id":"req_445fa3dd4e4d4c9681ed670e80fb8fed","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878444946,"created":1693668229864,"url":"http://localhost:3000/contas?senhaBanco={Senha do banco}","name":"listar-contas","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693668229864,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_724b26aa24834635bd520dfa5a0fb0ac","parentId":null,"modified":1693878153633,"created":1693668228321,"name":"api-sistema-bancario","description":"","scope":"collection","_type":"workspace"},{"_id":"req_3339553a106d45d7b1acae71adaf08ec","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878617544,"created":1693697135598,"url":"http://localhost:3000/contas/saldo?numeroConta={Número da conta}&senha={Senha}","name":"exibir-saldo","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693668229814,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_48eb006b0d2247238d967a5511bdef97","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878632427,"created":1693701745623,"url":"http://localhost:3000/contas/extrato?numeroConta={Número da conta}&senha={Senha}","name":"exibir-extrato","description":"","method":"GET","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693668229789,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_bb706c1324c8487b984760bf6bd6ee5d","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878530774,"created":1693669561153,"url":"http://localhost:3000/contas","name":"criar-conta","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"nome\": \"Nome\",\n  \"cpf\": \"CPF\",\n  \"dataNascimento\": \"Data de nascimento\",\n  \"telefone\": \"Telefone\",\n  \"email\": \"E-mail\",\n  \"senha\": \"Senha\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693668229764,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_85af3029fb4d42d18fa6db542d9b2951","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878649722,"created":1693676182859,"url":"http://localhost:3000/transacoes/depositar","name":"depositar","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"numeroConta\": \"Número da conta\",\n  \"valor\": 1000\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693650209372.75,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_52e7c10202ec4ee49f1ae6d50da17022","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878656147,"created":1693695001152,"url":"http://localhost:3000/transacoes/sacar","name":"sacar","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"numeroConta\": \"Número da conta\",\n  \"valor\": 1000,\n  \"senha\": \"Senha\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693641199177.125,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_b0f8cb119a2b40e588444e9184a32f85","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878664178,"created":1693696057052,"url":"http://localhost:3000/transacoes/transferir","name":"transferir","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"numeroContaOrigem\": \"Número da conta de origem\",\n  \"numeroContaDestino\": \"Número da conta de destino\",\n  \"valor\": 1000,\n  \"senha\": \"Senha\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693636694079.3125,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_16ceed280052489a93613ffbbc962a84","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878581037,"created":1693672311283,"url":"http://localhost:3000/contas/:numeroConta/usuario","name":"atualizar-usuario","description":"","method":"PUT","body":{"mimeType":"application/json","text":"{\n  \"nome\": \"Nome atualizado\",\n  \"cpf\": \"CPF atualizado\",\n  \"dataNascimento\": \"Data de nascimento atualizada\",\n  \"telefone\": \"Telefone atualizado\",\n  \"email\": \"E-mail atualizado\",\n  \"senha\": \"Senha atualizada\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"},{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693632188981.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_50b1c2970d894ce28385552e154fe568","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693878593501,"created":1693675608901,"url":"http://localhost:3000/contas/:numeroConta","name":"excluir-conta","description":"","method":"DELETE","body":{},"parameters":[],"headers":[{"name":"User-Agent","value":"Insomnia/2023.5.7"}],"authentication":{},"metaSortKey":-1693632188881.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_714b6fef292a7033d0ec614f6ae39813e1381cf1","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693668228325,"created":1693668228325,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1693668228325,"_type":"environment"},{"_id":"jar_714b6fef292a7033d0ec614f6ae39813e1381cf1","parentId":"wrk_724b26aa24834635bd520dfa5a0fb0ac","modified":1693668228327,"created":1693668228327,"name":"Default Jar","cookies":[],"_type":"cookie_jar"}]}
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-09-05T02:01:19.508Z",
+    "__export_source": "insomnia.desktop.app:v2023.5.7",
+    "resources": [
+        {
+            "_id": "req_445fa3dd4e4d4c9681ed670e80fb8fed",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878444946,
+            "created": 1693668229864,
+            "url": "http://localhost:3000/contas?senhaBanco={Senha do banco}",
+            "name": "listar-contas",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693668229864,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "parentId": null,
+            "modified": 1693878153633,
+            "created": 1693668228321,
+            "name": "api-sistema-bancario",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_3339553a106d45d7b1acae71adaf08ec",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878617544,
+            "created": 1693697135598,
+            "url": "http://localhost:3000/contas/saldo?numeroConta={Número da conta}&senha={Senha}",
+            "name": "exibir-saldo",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693668229814,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_48eb006b0d2247238d967a5511bdef97",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878632427,
+            "created": 1693701745623,
+            "url": "http://localhost:3000/contas/extrato?numeroConta={Número da conta}&senha={Senha}",
+            "name": "exibir-extrato",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693668229789,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bb706c1324c8487b984760bf6bd6ee5d",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878530774,
+            "created": 1693669561153,
+            "url": "http://localhost:3000/contas",
+            "name": "criar-conta",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"nome\": \"Nome\",\n  \"cpf\": \"CPF\",\n  \"dataNascimento\": \"Data de nascimento\",\n  \"telefone\": \"Telefone\",\n  \"email\": \"E-mail\",\n  \"senha\": \"Senha\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693668229764,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_85af3029fb4d42d18fa6db542d9b2951",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878649722,
+            "created": 1693676182859,
+            "url": "http://localhost:3000/transacoes/depositar",
+            "name": "depositar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"numeroConta\": \"Número da conta\",\n  \"valor\": 1000\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693650209372.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_52e7c10202ec4ee49f1ae6d50da17022",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878656147,
+            "created": 1693695001152,
+            "url": "http://localhost:3000/transacoes/sacar",
+            "name": "sacar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"numeroConta\": \"Número da conta\",\n  \"valor\": 1000,\n  \"senha\": \"Senha\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693641199177.125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_b0f8cb119a2b40e588444e9184a32f85",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878664178,
+            "created": 1693696057052,
+            "url": "http://localhost:3000/transacoes/transferir",
+            "name": "transferir",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"numeroContaOrigem\": \"Número da conta de origem\",\n  \"numeroContaDestino\": \"Número da conta de destino\",\n  \"valor\": 1000,\n  \"senha\": \"Senha\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693636694079.3125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_16ceed280052489a93613ffbbc962a84",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878581037,
+            "created": 1693672311283,
+            "url": "http://localhost:3000/contas/:numeroConta/usuario",
+            "name": "atualizar-usuario",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"nome\": \"Nome atualizado\",\n  \"cpf\": \"CPF atualizado\",\n  \"dataNascimento\": \"Data de nascimento atualizada\",\n  \"telefone\": \"Telefone atualizado\",\n  \"email\": \"E-mail atualizado\",\n  \"senha\": \"Senha atualizada\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693632188981.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_50b1c2970d894ce28385552e154fe568",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693878593501,
+            "created": 1693675608901,
+            "url": "http://localhost:3000/contas/:numeroConta",
+            "name": "excluir-conta",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1693632188881.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_714b6fef292a7033d0ec614f6ae39813e1381cf1",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693668228325,
+            "created": 1693668228325,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1693668228325,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_714b6fef292a7033d0ec614f6ae39813e1381cf1",
+            "parentId": "wrk_724b26aa24834635bd520dfa5a0fb0ac",
+            "modified": 1693668228327,
+            "created": 1693668228327,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
