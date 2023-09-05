@@ -3,7 +3,17 @@
 </h1>
 
 <p align="center">
-  <img alt="Status Em Desenvolvimento" src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-green">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gabrielsalesdev/api-sistema-bancario?color=%2304D361">
+
+  <img alt="GitHub Repository size" src="https://img.shields.io/github/repo-size/gabrielsalesdev/api-sistema-bancario">
+  
+  <a href="https://github.com/gabrielsalesdev/api-sistema-bancario/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gabrielsalesdev/api-sistema-bancario">
+  </a>
+  
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-brightgreen">
+
+  <img alt="Status Em Desenvolvimento" src="https://img.shields.io/badge/status-em%20desenvolvimento-green">
 </p>
 
 <p align="center">
