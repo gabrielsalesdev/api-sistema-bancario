@@ -1,5 +1,5 @@
 <h1 align="center"> 
-	🚧 API Sistena Bancário 🚧
+	🚧 API Sistema Bancários 🚧
 </h1>
 
 <p align="center">
