@@ -171,7 +171,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:cubos-academy/academy-template-readme-projects.git
+$ git clone git@github.com:gabrielsalesdev/api-sistema-bancario.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd api-sistema-bancario
