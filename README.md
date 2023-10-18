@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
- <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-sobre-o-projeto">Sobre o projeto</a> •
  <a href="#-endpoints">Endpoints</a> •
  <a href="#%EF%B8%8F-como-executar">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a>
